@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmy Thomas | Technical Portfolio</title>
+    <!-- Load Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and smooth transitions */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background for contrast */
+        }
+        .header-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Navigation Header -->
+    <header class="bg-white header-shadow sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Project Name -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-gray-800 tracking-wider">Ashmy | <span class="text-blue-600">Portfolio</span></a>
+                </div>
+                <!-- Desktop Navigation Links (Hidden on Mobile) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-150">About Me</a>
+                    <a href="#tech-stack" class="text-gray-600 hover:text-blue-600 transition duration-150">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-150">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button id="menu-button" class="md:hidden text-gray-500 hover:text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-t border-gray-100 shadow-lg">
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">About Me</a>
+            <a href="#tech-stack" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Skills</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-20 bg-blue-50">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4">
+                    Ashmy Thomas | <span class="text-blue-700">Application Development</span> Consultant
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    A solutions-driven Programmer Analyst specializing in **C#, .NET, and SQL Server** development, with hands-on experience in **Cloud Architecture (Azure/AWS)** and **Agile** delivery.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#tech-stack" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        View Technical Skills
+                    </a>
+                    <a href="#contact" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-xl shadow-lg text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- New: About Me / Technical Profile Section -->
+        <section id="about" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">My Technical Profile</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Text Content Column -->
+                    <div class="space-y-6">
+                        <p class="text-lg text-gray-700">
+                            I am a results-oriented technologist with an Integrated Master of Computer Application (MCA) and post-diplomas in IT Project Management and Cloud Architecture. My experience is centered around delivering robust solutions in fast-paced environments.
+                        </p>
+                        <p class="text-lg text-gray-700 font-semibold border-l-4 border-blue-500 pl-3">
+                            My core focus is on **full-stack development** and implementing scalable architectures. I translate business requirements into efficient code, using **Agile principles** to ensure project success.
+                        </p>
+                        <ul class="text-gray-600 space-y-3 mt-4">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
+                                **Application Development:** Proven background in C# and SQL development from my Programmer Analyst role.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
+                                **Cloud Readiness:** Hands-on training in Azure/AWS architecture, microservices, and system administration.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
+                                **Quality Assurance:** Experience in QA/QC processes, including developing and executing automated Selenium test cases.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Technical Skills Tag Cloud Column -->
+                    <div class="p-8 bg-gray-50 rounded-2xl shadow-xl border-t-4 border-gray-200" id="tech-stack">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Core Technical Stack</h3>
+                        <div class="flex flex-wrap justify-center gap-3">
+                            <span class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-full shadow-md">C# / .NET Core</span>
+                            <span class="px-4 py-2 bg-gray-700 text-white text-sm font-medium rounded-full shadow-md">SQL Server</span>
+                            <span class="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full shadow-md">Azure Cloud (PaaS)</span>
+                            <span class="px-4 py-2 bg-yellow-600 text-white text-sm font-medium rounded-full shadow-md">AWS Foundations</span>
+                            <span class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full shadow-md">Selenium Testing</span>
+                            <span class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-full shadow-md">Python</span>
+                            <span class="px-4 py-2 bg-gray-400 text-gray-900 text-sm font-medium rounded-full shadow-md">Agile / Scrum</span>
+                            <span class="px-4 py-2 bg-blue-400 text-white text-sm font-medium rounded-full shadow-md">Microservices</span>
+                            <span class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-md">Unit Testing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 sm:py-24 bg-blue-50">
+            <div class="max-w-2xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Let's Connect and Build</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    I am actively seeking Consultant and Application Development opportunities. Reach out via email or LinkedIn to discuss how my technical skills can benefit your team.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="mailto:ashmythomas123@gmail.com" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashmy-thomas/" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-xl shadow-lg text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        View LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; <span id="current-year"></span> Ashmy Thomas Portfolio. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript for basic interactivity (Toggle mobile menu & set year) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            // 1. Toggle mobile menu visibility
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // 2. Set current year in the footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
+
+            // 3. Close menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
