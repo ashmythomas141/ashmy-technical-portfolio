@@ -1,330 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashmy Thomas | Technical Portfolio</title>
-    <!-- Load Tailwind CSS for modern, responsive styling -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles for the Inter font and smooth transitions */
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f7f9fb; /* Light background for contrast */
-        }
-        .header-shadow {
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
-        }
-        .cta-button {
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-        .cta-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        .project-card {
-            transition: all 0.3s ease-in-out;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashmy Thomas | Technical Portfolio</title>
+    <!-- Load Tailwind CSS for modern, responsive styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the Inter font and smooth transitions */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background for contrast */
+        }
+        .header-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+        }
+        .cta-button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(59, 130, 246, 0.4);
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .project-card {
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
 </head>
 <body class="min-h-screen flex flex-col">
 
-    <!-- Navigation Header -->
-    <header class="bg-white header-shadow sticky top-0 z-10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <!-- Logo/Project Name -->
-                <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold text-gray-800 tracking-wider">Ashmy | <span class="text-blue-600">Portfolio</span></a>
-                </div>
-                <!-- Desktop Navigation Links (Hidden on Mobile) -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-150">Summary</a>
-                    <a href="#experience" class="text-gray-600 hover:text-blue-600 transition duration-150">Experience</a>
-                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-150">Projects</a>
-                    <a href="#tech-stack" class="text-gray-600 hover:text-blue-600 transition duration-150">Skills</a>
-                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-150">Contact</a>
-                </nav>
-                <!-- Mobile Menu Button -->
-                <button id="menu-button" class="md:hidden text-gray-500 hover:text-gray-700 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </div>
-        </div>
+    <!-- Navigation Header -->
+    <header class="bg-white header-shadow sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo/Project Name -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-2xl font-bold text-gray-800 tracking-wider">Ashmy | <span class="text-blue-600">Portfolio</span></a>
+                </div>
+                <!-- Desktop Navigation Links (Hidden on Mobile) -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-150">Summary</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600 transition duration-150">Experience</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-150">Projects</a>
+                    <a href="#tech-stack" class="text-gray-600 hover:text-blue-600 transition duration-150">Skills</a>
+                    <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-150">Contact</a>
+                </nav>
+                <!-- Mobile Menu Button -->
+                <button id="menu-button" class="md:hidden text-gray-500 hover:text-gray-700 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-t border-gray-100 shadow-lg">
-            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Summary</a>
-            <a href="#experience" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Experience</a>
-            <a href="#projects" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Projects</a>
-            <a href="#tech-stack" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Skills</a>
-            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
-        </div>
-    </header>
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-t border-gray-100 shadow-lg">
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Summary</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Experience</a>
+            <a href="#projects" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Projects</a>
+            <a href="#tech-stack" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Skills</a>
+            <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
+        </div>
+    </header>
 
-    <!-- Main Content Area -->
-    <main class="flex-grow">
-        <!-- Hero Section -->
-        <section class="py-20 bg-blue-50">
-            <div class="max-w-4xl mx-auto px-4 text-center">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4">
-                    Ashmy Thomas | <span class="text-blue-700">Application Development</span> Technologist
-                </h1>
-                <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
-                    A solutions-driven technologist specializing in SQL Database Design, PHP, and Python scripting, with hands-on experience in Cloud Architecture (Azure/AWS) and Agile delivery.
-                </p>
-                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="#tech-stack" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        View Technical Skills
-                    </a>
-                    <a href="https://www.linkedin.com/in/ashmy-thomas/" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-xl shadow-lg text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        View LinkedIn Profile
-                    </a>
-                </div>
-            </div>
-        </section>
+    <!-- Main Content Area -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-20 bg-blue-50">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 mb-4">
+                    Ashmy Thomas | <span class="text-blue-700">Application Development</span> Technologist
+                </h1>
+                <p class="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                    A solutions-driven technologist specializing in SQL Database Design, PHP, and Python scripting, with hands-on experience in Cloud Architecture (Azure/AWS) and Agile delivery.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="#tech-stack" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        View Technical Skills
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashmy-thomas/" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-xl shadow-lg text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        View LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <!-- About Me / Technical Profile Section (Renamed Summary) -->
-        <section id="about" class="py-16 sm:py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Technical Summary & Education</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <!-- Text Content Column -->
-                    <div class="space-y-6">
-                        <h3 class="text-xl font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mb-4">Core Focus</h3>
-                        <p class="text-lg text-gray-700">
-                            I am a results-oriented technologist with an Integrated Master of Computer Application (MCA) and post-diplomas in IT Project Management and Cloud Architecture. My experience is centered around delivering robust solutions in fast-paced environments.
-                        </p>
-                        <p class="text-lg text-gray-700 font-semibold border-l-4 border-gray-400 pl-3">
-                            My core focus is on full-stack development (PHP/SQL) and implementing scalable architectures. I translate business requirements into efficient code, using Agile principles to ensure project success.
-                        </p>
-                        <h3 class="text-xl font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mt-8 mb-4">Key Background</h3>
-                        <ul class="text-gray-600 space-y-3 mt-4">
-                            <li class="flex items-start">
-                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
-                                Application Development: Proven background in PHP, Python, and SQL development, including full-stack portal design (Academic Project).
-                            </li>
-                            <li class="flex items-start">
-                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
-                                Cloud Readiness: Hands-on training in Azure/AWS architecture and microservices concepts.
-                            </li>
-                            <li class="flex items-start">
-                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
-                                Quality Assurance: Experience in QA/QC processes, including developing and executing automated Selenium test cases.
-                            </li>
-                        </ul>
-                    </div>
+        <!-- About Me / Technical Profile Section (Renamed Summary) -->
+        <section id="about" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Technical Summary & Education</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <!-- Text Content Column -->
+                    <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mb-4">Core Focus</h3>
+                        <p class="text-lg text-gray-700">
+                            I am a results-oriented technologist with an Integrated Master of Computer Application (MCA) and post-diplomas in IT Project Management and Cloud Architecture. My experience is centered around delivering robust solutions in fast-paced environments.
+                        </p>
+                        <p class="text-lg text-gray-700 font-semibold border-l-4 border-gray-400 pl-3">
+                            My core focus is on full-stack development (PHP/SQL) and implementing scalable architectures. I translate business requirements into efficient code, using Agile principles to ensure project success.
+                        </p>
+                        <h3 class="text-xl font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mt-8 mb-4">Key Background</h3>
+                        <ul class="text-gray-600 space-y-3 mt-4">
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
+                                Application Development: Proven background in PHP, Python, and SQL development, including full-stack portal design (Academic Project).
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
+                                Cloud Readiness: Hands-on training in Azure/AWS architecture and microservices concepts.
+                            </li>
+                            <li class="flex items-start">
+                                <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
+                                Quality Assurance: Experience in QA/QC processes, including developing and executing automated Selenium test cases.
+                            </li>
+                        </ul>
+                    </div>
 
-                    <!-- Education / Certifications Column -->
-                    <div class="p-8 bg-gray-50 rounded-2xl shadow-xl border-t-4 border-gray-200">
-                        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Formal Education & Training</h3>
-                        <div class="space-y-6">
-                            <!-- Education 1: Master of Computer Application -->
-                            <div>
-                                <h4 class="text-lg font-semibold text-blue-700">Integrated Master of Computer Application (MCA)</h4>
-                                <p class="text-gray-800">Amal Jyothi College of Engineering, Kerala</p>
-                                <p class="text-sm text-gray-500 mb-2">Graduated: 2022 | CGPA: 8.28/10</p>
-                                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
-                                    <li>Relevant Coursework: Programming (C, Python, HTML, SQL), Accountancy & Banking Basics.</li>
-                                    <li>Awards: Manager's Honors Award & Top Performer Rank 3.</li>
-                                </ul>
-                            </div>
-                            <!-- Certification -->
-                            <div class="border-t pt-4">
-                                <h4 class="text-lg font-semibold text-blue-700">Certifications & Diplomas</h4>
-                                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
-                                    <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
-                                    <li>Post-Diplomas in IT Project Management and Cloud Architecture</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <!-- Education / Certifications Column -->
+                    <div class="p-8 bg-gray-50 rounded-2xl shadow-xl border-t-4 border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Formal Education & Training</h3>
+                        <div class="space-y-6">
+                            <!-- Education 1: Master of Computer Application -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-blue-700">Integrated Master of Computer Application (MCA)</h4>
+                                <p class="text-gray-800">Amal Jyothi College of Engineering, Kerala</p>
+                                <p class="text-sm text-gray-500 mb-2">Graduated: 2022 | CGPA: 8.28/10</p>
+                                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
+                                    <li>Relevant Coursework: Programming (C, Python, HTML, SQL), Accountancy & Banking Basics.</li>
+                                    <li>Awards: Manager's Honors Award & Top Performer Rank 3.</li>
+                                </ul>
+                            </div>
+                            <!-- Certification -->
+                            <div class="border-t pt-4">
+                                <h4 class="text-lg font-semibold text-blue-700">Certifications & Diplomas</h4>
+                                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
+                                    <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+                                    <li>Post-Diplomas in IT Project Management and Cloud Architecture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <!-- New: Professional Experience Section -->
-        <section id="experience" class="py-16 sm:py-24 bg-blue-50">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Professional Experience</h2>
-                <div class="space-y-10">
-                    
-                    <!-- Experience 1: Daily Reports Officer (Hackathon) -->
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-900">Daily Reports Officer - Operations Team</h3>
-                                <p class="text-lg text-gray-600">Hackathon 2025, Seneca College | Toronto, ON</p>
-                            </div>
-                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">09/2024 - 04/2025</span>
-                        </div>
-                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
-                            <li>Managed and processed daily operational reports for the hackathon event, ensuring timely and accurate data delivery to stakeholders.</li>
-                            <li>Developed streamlined data collection procedures to improve the efficiency of the reports team, minimizing manual data entry errors.</li>
-                            <li>Utilized SQL and Python (or similar tools) to query, validate, and summarize key operational metrics, providing foundational experience in data integrity.</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- Experience 2: Programmer Analyst Trainee (Cognizant) -->
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-900">Programmer Analyst Trainee</h3>
-                                <p class="text-lg text-gray-600">Cognizant Technology Solutions | Kerala, India</p>
-                            </div>
-                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">02/2022 – 01/2023</span>
-                        </div>
-                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
-                            <li>Supported software QA/QC processes to ensure systems met client requirements and quality standards.</li>
-                            <li>Executed Selenium-based test cases** and collaborated in Agile teams to improve testing efficiency across various software modules.</li>
-                            <li>Gained hands-on experience in the software development lifecycle (SDLC) from testing to deployment.</li>
-                        </ul>
-                    </div>
+        <!-- New: Professional Experience Section -->
+        <section id="experience" class="py-16 sm:py-24 bg-blue-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Professional Experience</h2>
+                <div class="space-y-10">
+                    
+                    <!-- Experience 1: Daily Reports Officer (Hackathon) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Daily Reports Officer - Operations Team</h3>
+                                <p class="text-lg text-gray-600">Hackathon 2025, Seneca College | Toronto, ON</p>
+                            </div>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">09/2024 - 04/2025</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
+                            <li>Managed and processed daily operational reports for the hackathon event, ensuring timely and accurate data delivery to stakeholders.</li>
+                            <li>Developed streamlined data collection procedures to improve the efficiency of the reports team, minimizing manual data entry errors.</li>
+                            <li>Utilized SQL and Python (or similar tools) to query, validate, and summarize key operational metrics, providing foundational experience in data integrity.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Experience 2: Programmer Analyst Trainee (Cognizant) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Programmer Analyst Trainee</h3>
+                                <p class="text-lg text-gray-600">Cognizant Technology Solutions | Kerala, India</p>
+                            </div>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">02/2022 – 01/2023</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
+                            <li>Supported software QA/QC processes to ensure systems met client requirements and quality standards.</li>
+                            <li>Executed Selenium-based test cases** and collaborated in Agile teams to improve testing efficiency across various software modules.</li>
+                            <li>Gained hands-on experience in the software development lifecycle (SDLC) from testing to deployment.</li>
+                        </ul>
+                    </div>
 
-                    <!-- Experience 3: Customer Service Associate (Tim Hortons) -->
-                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
-                        <div class="flex justify-between items-start mb-4">
-                            <div>
-                                <h3 class="text-2xl font-bold text-gray-900">Customer Service Associate</h3>
-                                <p class="text-lg text-gray-600">Tim Hortons | Union Station, Toronto, ON</p>
-                            </div>
-                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">2023 - Present</span>
-                        </div>
-                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
-                            <li>Delivered exceptional service to 600+ clients daily in a high-volume environment, actively listening to and resolving complex inquiries to ensure positive client experience and satisfaction (Client Engagement).</li>
-                            <li>Maintained 100% accuracy in processing cash, debit/credit, and mobile payments; consistently balanced tills and adhered to strict operational accountability.</li>
-                            <li>Mentored and trained new employees, reinforcing service standards and operational compliance.</li>
-                        </ul>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
+                    <!-- Experience 3: Customer Service Associate (Tim Hortons) -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Customer Service Associate</h3>
+                                <p class="text-lg text-gray-600">Tim Hortons | Union Station, Toronto, ON</p>
+                            </div>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">2023 - Present</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
+                            <li>Delivered exceptional service to 600+ clients daily in a high-volume environment, actively listening to and resolving complex inquiries to ensure positive client experience and satisfaction (Client Engagement).</li>
+                            <li>Maintained 100% accuracy in processing cash, debit/credit, and mobile payments; consistently balanced tills and adhered to strict operational accountability.</li>
+                            <li>Mentored and trained new employees, reinforcing service standards and operational compliance.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
 
-        <!-- Projects Showcase Section with Links -->
-        <section id="projects" class="py-16 sm:py-24 bg-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Featured Technical Projects</h2>
-                <!-- Adjusted grid to use 2 columns on large screens for a clean layout of 2 projects -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    
-                    <!-- Project 1 (Academic Focus - SQL/PHP) -->
-                    <!-- Updated href to # and removed target="_blank" -->
-                    <a href="#" class="project-card block">
-                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between border-t-4 border-blue-600">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3">Indira Gandhi Old Age Pension Portal</h3>
-                                <p class="text-gray-600 mb-4 text-sm">Developed a full-stack management portal with a SQL-driven backend and PHP logic. Features include role-based access control for finance departments, OTP registration, and a secure, single-application workflow, ensuring data integrity and compliance.</p>
-                                <div class="mb-4 flex flex-wrap gap-2">
-                                    <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full">PHP / WAMP</span>
-                                    <span class="inline-block bg-gray-700 text-white text-xs font-semibold px-3 py-1 rounded-full">SQL Database Design</span>
-                                    <span class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Security & OTP</span>
-                                    <span class="inline-block bg-blue-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Full Stack</span>
-                                </div>
-                            </div>
-                            <!-- Updated text to indicate details are coming soon and removed the GitHub icon -->
-                            <span class="text-gray-500 font-semibold mt-4 flex items-center">
-                                Project Details (Coming Soon)
-                            </span>
-                        </div>
-                    </a>
+        <!-- Projects Showcase Section with Links -->
+        <section id="projects" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Featured Technical Projects</h2>
+                <!-- Adjusted grid to use 2 columns on large screens for a clean layout of 2 projects -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                    
+                    <!-- Project 1 (Academic Focus - SQL/PHP) -->
+                    <!-- Updated href to # and removed target="_blank" -->
+                    <a href="#" class="project-card block">
+                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between border-t-4 border-blue-600">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Indira Gandhi Old Age Pension Portal</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Developed a full-stack management portal with a SQL-driven backend and PHP logic. Features include role-based access control for finance departments, OTP registration, and a secure, single-application workflow, ensuring data integrity and compliance.</p>
+                                <div class="mb-4 flex flex-wrap gap-2">
+                                    <span class="inline-block bg-indigo-600 text-white text-xs font-semibold px-3 py-1 rounded-full">PHP / WAMP</span>
+                                    <span class="inline-block bg-gray-700 text-white text-xs font-semibold px-3 py-1 rounded-full">SQL Database Design</span>
+                                    <span class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Security & OTP</span>
+                                    <span class="inline-block bg-blue-400 text-white text-xs font-semibold px-3 py-1 rounded-full">Full Stack</span>
+                                </div>
+                            </div>
+                            <!-- Updated text to indicate details are coming soon and removed the GitHub icon -->
+                            <span class="text-gray-500 font-semibold mt-4 flex items-center">
+                                Project Details (Coming Soon)
+                            </span>
+                        </div>
+                    </a>
 
-                    <!-- Project 2: Cloud Deployment (QA Automation Pipeline) -->
-                    <!-- Updated href to # and removed target="_blank" -->
-                    <a href="#" class="project-card block">
-                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between border-t-4 border-blue-600">
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 mb-3">Selenium QA Automation & CI/CD</h3>
-                                <p class="text-gray-600 mb-4 text-sm">Constructed a proof-of-concept CI/CD pipeline (using Azure DevOps or GitHub Actions) to host and run automated end-to-end regression tests. Utilized Python and Selenium WebDriver to execute tests against a simulated web application, ensuring code deployment quality and reducing manual test time.</p>
-                                <div class="mb-4 flex flex-wrap gap-2">
-                                    <span class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Selenium</span>
-                                    <span class="inline-block bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">CI/CD / DevOps</span>
-                                    <span class="inline-block bg-purple-600 text-white text-xs font-semibold rounded-full">Python Testing</span>
-                                </div>
-                            </div>
-                            <!-- Updated text to indicate details are coming soon and removed the GitHub icon -->
-                            <span class="text-gray-500 font-semibold mt-4 flex items-center">
-                                Project Details (Coming Soon)
-                            </span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
+                    <!-- Project 2: Cloud Deployment (QA Automation Pipeline) -->
+                    <!-- Updated href to # and removed target="_blank" -->
+                    <a href="#" class="project-card block">
+                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between border-t-4 border-blue-600">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3">Selenium QA Automation & CI/CD</h3>
+                                <p class="text-gray-600 mb-4 text-sm">Constructed a proof-of-concept CI/CD pipeline (using Azure DevOps or GitHub Actions) to host and run automated end-to-end regression tests. Utilized Python and Selenium WebDriver to execute tests against a simulated web application, ensuring code deployment quality and reducing manual test time.</p>
+                                <div class="mb-4 flex flex-wrap gap-2">
+                                    <span class="inline-block bg-red-600 text-white text-xs font-semibold px-3 py-1 rounded-full">Selenium</span>
+                                    <span class="inline-block bg-green-600 text-white text-xs font-semibold px-3 py-1 rounded-full">CI/CD / DevOps</span>
+                                    <span class="inline-block bg-purple-600 text-white text-xs font-semibold rounded-full">Python Testing</span>
+                                </div>
+                            </div>
+                            <!-- Updated text to indicate details are coming soon and removed the GitHub icon -->
+                            <span class="text-gray-500 font-semibold mt-4 flex items-center">
+                                Project Details (Coming Soon)
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-        <!-- Technical Skills Tag Cloud Section -->
-        <section class="py-16 sm:py-24 bg-blue-50" id="tech-stack">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- Reusing the tag cloud here -->
-                <div class="p-8 bg-white rounded-2xl shadow-xl border-t-4 border-gray-200">
-                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Core Technical Stack</h3>
-                    <div class="flex flex-wrap justify-center gap-3">
-                        <span class="px-4 py-2 bg-gray-700 text-white text-sm font-medium rounded-full shadow-md">SQL / T-SQL / Database Design</span>
-                        <span class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-md">PHP / WAMP / Full Stack</span>
-                        <span class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-full shadow-md">Python (Scripting/QA)</span>
-                        <span class="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full shadow-md">Azure Cloud (PaaS)</span>
-                        <span class="px-4 py-2 bg-yellow-600 text-white text-sm font-medium rounded-full shadow-md">AWS Foundations</span>
-                        <span class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full shadow-md">Selenium Testing / QA</span>
-                        <span class="px-4 py-2 bg-gray-400 text-gray-900 text-sm font-medium rounded-full shadow-md">Agile / Scrum</span>
-                        <span class="px-4 py-2 bg-blue-400 text-white text-sm font-medium rounded-full shadow-md">API Design Basics</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Technical Skills Tag Cloud Section -->
+        <section class="py-16 sm:py-24 bg-blue-50" id="tech-stack">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Reusing the tag cloud here -->
+                <div class="p-8 bg-white rounded-2xl shadow-xl border-t-4 border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Core Technical Stack</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-gray-700 text-white text-sm font-medium rounded-full shadow-md">SQL / T-SQL / Database Design</span>
+                        <span class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-md">PHP / WAMP / Full Stack</span>
+                        <span class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-full shadow-md">Python (Scripting/QA)</span>
+                        <span class="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full shadow-md">Azure Cloud (PaaS)</span>
+                        <span class="px-4 py-2 bg-yellow-600 text-white text-sm font-medium rounded-full shadow-md">AWS Foundations</span>
+                        <span class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full shadow-md">Selenium Testing / QA</span>
+                        <span class="px-4 py-2 bg-gray-400 text-gray-900 text-sm font-medium rounded-full shadow-md">Agile / Scrum</span>
+                        <span class="px-4 py-2 bg-blue-400 text-white text-sm font-medium rounded-full shadow-md">API Design Basics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
-        <!-- Contact Section -->
-        <section id="contact" class="py-16 sm:py-24 bg-white">
-            <div class="max-w-2xl mx-auto px-4 text-center">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Let's Connect and Build</h2>
-                <p class="text-lg text-gray-600 mb-8">
-                    I am actively seeking Consultant and Application Development opportunities. Reach out via email or LinkedIn to discuss how my technical skills can benefit your team.
-                </p>
-                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
-                    <a href="mailto:ashmythomas123@gmail.com" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        Email Me
-                    </a>
-                    <a href="https://www.linkedin.com/in/ashmy-thomas/" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-xl shadow-lg text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                        View LinkedIn
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 sm:py-24 bg-white">
+            <div class="max-w-2xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">Let's Connect and Build</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    I am actively seeking Consultant and Application Development opportunities. Reach out via email or LinkedIn to discuss how my technical skills can benefit your team.
+                </p>
+                <div class="space-y-4 sm:space-y-0 sm:space-x-6">
+                    <a href="mailto:ashmythomas123@gmail.com" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-xl shadow-lg text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/ashmy-thomas/" target="_blank" class="cta-button inline-flex items-center justify-center px-8 py-3 border border-blue-600 text-base font-medium rounded-xl shadow-lg text-blue-600 bg-white hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        View LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
-            &copy; <span id="current-year"></span> Ashmy Thomas Portfolio. All rights reserved.
-        </div>
-    </footer>
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            &copy; <span id="current-year"></span> Ashmy Thomas Portfolio. All rights reserved.
+        </div>
+    </footer>
 
-    <!-- JavaScript for basic interactivity (Toggle mobile menu & set year) -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
+    <!-- JavaScript for basic interactivity (Toggle mobile menu & set year) -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
 
-            // 1. Toggle mobile menu visibility
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
+            // 1. Toggle mobile menu visibility
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
 
-            // 2. Set current year in the footer
-            document.getElementById('current-year').textContent = new Date().getFullYear();
+            // 2. Set current year in the footer
+            document.getElementById('current-year').textContent = new Date().getFullYear();
 
-            // 3. Close menu when a link is clicked
-            mobileMenu.querySelectorAll('a').forEach(link => {
-                link.addEventListener('click', () => {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-        });
-    </script>
+            // 3. Close menu when a link is clicked
+            mobileMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+        });
+    </script>
 </body>
-</html>
+</html> keep this same code but just add seneca to that
