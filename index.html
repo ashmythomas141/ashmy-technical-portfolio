@@ -44,7 +44,8 @@
                 </div>
                 <!-- Desktop Navigation Links (Hidden on Mobile) -->
                 <nav class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-150">About Me</a>
+                    <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-150">Summary</a>
+                    <a href="#experience" class="text-gray-600 hover:text-blue-600 transition duration-150">Experience</a>
                     <a href="#projects" class="text-gray-600 hover:text-blue-600 transition duration-150">Projects</a>
                     <a href="#tech-stack" class="text-gray-600 hover:text-blue-600 transition duration-150">Skills</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-150">Contact</a>
@@ -58,7 +59,8 @@
 
         <!-- Mobile Menu (Hidden by default) -->
         <div id="mobile-menu" class="hidden md:hidden absolute w-full bg-white border-t border-gray-100 shadow-lg">
-            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">About Me</a>
+            <a href="#about" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Summary</a>
+            <a href="#experience" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Experience</a>
             <a href="#projects" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Projects</a>
             <a href="#tech-stack" class="block px-4 py-2 text-gray-600 hover:bg-gray-50 border-b">Skills</a>
             <a href="#contact" class="block px-4 py-2 text-gray-600 hover:bg-gray-50">Contact</a>
@@ -87,19 +89,21 @@
             </div>
         </section>
 
-        <!-- New: About Me / Technical Profile Section -->
+        <!-- About Me / Technical Profile Section (Renamed Summary) -->
         <section id="about" class="py-16 sm:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">My Technical Profile</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Technical Summary & Education</h2>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                     <!-- Text Content Column -->
                     <div class="space-y-6">
+                        <h3 class="text-xl font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mb-4">Core Focus</h3>
                         <p class="text-lg text-gray-700">
                             I am a results-oriented technologist with an Integrated Master of Computer Application (MCA) and post-diplomas in IT Project Management and Cloud Architecture. My experience is centered around delivering robust solutions in fast-paced environments.
                         </p>
-                        <p class="text-lg text-gray-700 font-semibold border-l-4 border-blue-500 pl-3">
+                        <p class="text-lg text-gray-700 font-semibold border-l-4 border-gray-400 pl-3">
                             My core focus is on **full-stack development** and implementing scalable architectures. I translate business requirements into efficient code, using **Agile principles** to ensure project success.
                         </p>
+                        <h3 class="text-xl font-bold text-gray-900 border-l-4 border-blue-500 pl-3 mt-8 mb-4">Key Background</h3>
                         <ul class="text-gray-600 space-y-3 mt-4">
                             <li class="flex items-start">
                                 <span class="flex-shrink-0 text-blue-600 mr-2">&bull;</span>
@@ -116,34 +120,86 @@
                         </ul>
                     </div>
 
-                    <!-- Technical Skills Tag Cloud Column -->
-                    <div class="p-8 bg-gray-50 rounded-2xl shadow-xl border-t-4 border-gray-200" id="tech-stack">
-                        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Core Technical Stack</h3>
-                        <div class="flex flex-wrap justify-center gap-3">
-                            <span class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-full shadow-md">C# / .NET Core</span>
-                            <span class="px-4 py-2 bg-gray-700 text-white text-sm font-medium rounded-full shadow-md">SQL Server</span>
-                            <span class="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full shadow-md">Azure Cloud (PaaS)</span>
-                            <span class="px-4 py-2 bg-yellow-600 text-white text-sm font-medium rounded-full shadow-md">AWS Foundations</span>
-                            <span class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full shadow-md">Selenium Testing</span>
-                            <span class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-full shadow-md">Python</span>
-                            <span class="px-4 py-2 bg-gray-400 text-gray-900 text-sm font-medium rounded-full shadow-md">Agile / Scrum</span>
-                            <span class="px-4 py-2 bg-blue-400 text-white text-sm font-medium rounded-full shadow-md">Microservices</span>
-                            <span class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-md">Unit Testing</span>
+                    <!-- Education / Certifications Column -->
+                    <div class="p-8 bg-gray-50 rounded-2xl shadow-xl border-t-4 border-gray-200">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Formal Education & Training</h3>
+                        <div class="space-y-6">
+                            <!-- Education 1: Master of Computer Application -->
+                            <div>
+                                <h4 class="text-lg font-semibold text-blue-700">Integrated Master of Computer Application (MCA)</h4>
+                                <p class="text-gray-800">Amal Jyothi College of Engineering, Kerala</p>
+                                <p class="text-sm text-gray-500 mb-2">Graduated: 2022 | CGPA: 8.28/10</p>
+                                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
+                                    <li>Relevant Coursework: Programming (C, Python, HTML, SQL), Accountancy & Banking Basics.</li>
+                                    <li>Awards: Manager's Honors Award & Top Performer Rank 3.</li>
+                                </ul>
+                            </div>
+                            <!-- Certification -->
+                            <div class="border-t pt-4">
+                                <h4 class="text-lg font-semibold text-blue-700">Certifications & Diplomas</h4>
+                                <ul class="list-disc list-inside text-sm text-gray-600 ml-4 space-y-1">
+                                    <li>AWS Academy Graduate - AWS Academy Cloud Foundations</li>
+                                    <li>Post-Diplomas in IT Project Management and Cloud Architecture</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
+
+        <!-- New: Professional Experience Section -->
+        <section id="experience" class="py-16 sm:py-24 bg-blue-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Professional Experience</h2>
+                <div class="space-y-10">
+                    
+                    <!-- Experience 1: Customer Service Associate -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Customer Service Associate</h3>
+                                <p class="text-lg text-gray-600">Tim Hortons | Union Station, Toronto, ON</p>
+                            </div>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">2023 - Present</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
+                            <li>Delivered exceptional service to **600+ clients daily** in a high-volume environment, actively listening to and resolving complex inquiries to ensure positive client experience and satisfaction (Client Engagement).</li>
+                            <li>Maintained **100% accuracy** in processing cash, debit/credit, and mobile payments; consistently balanced tills and adhered to strict operational accountability.</li>
+                            <li>Built strong relationships by resolving concerns quickly and creating meaningful client interactions.</li>
+                            <li>Mentored and trained new employees, reinforcing service standards and operational compliance.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 2: Daily Reports Officer -->
+                    <div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 border-l-4 border-blue-600">
+                        <div class="flex justify-between items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-900">Daily Reports Officer - Operations Team</h3>
+                                <p class="text-lg text-gray-600">Hackathon 2025, Seneca College | Toronto, ON</p>
+                            </div>
+                            <span class="text-sm font-semibold text-blue-600 bg-blue-100 px-3 py-1 rounded-full">09/2024 - 04/2025</span>
+                        </div>
+                        <ul class="list-disc list-inside text-gray-700 ml-4 space-y-2">
+                            <li>Managed and processed daily operational reports for the hackathon event, ensuring timely and accurate data delivery to stakeholders.</li>
+                            <li>Developed **streamlined data collection procedures** to improve the efficiency of the reports team, minimizing manual data entry errors.</li>
+                            <li>Utilized **SQL and Python** (or similar tools) to query, validate, and summarize key operational metrics, providing foundational experience in data integrity.</li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
         <!-- Projects Showcase Section with Links -->
-        <section id="projects" class="py-16 sm:py-24 bg-blue-50">
+        <section id="projects" class="py-16 sm:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-extrabold text-gray-900 text-center mb-12">Featured Projects (C# / .NET / SQL)</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     
                     <!-- Project 1: .NET Core Microservice (Order Processing) -->
                     <a href="https://github.com/ashmythomas141/order-microservice" target="_blank" class="project-card block">
-                        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between">
+                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3">Order Processing Microservice</h3>
                                 <p class="text-gray-600 mb-4 text-sm">Engineered a **RESTful API** microservice using **C#** and **.NET 8** to manage order transactions. Implemented **Entity Framework Core** with a **SQL Server** backend for secure, persistent storage. The architecture promotes scalability and uses repository patterns and dependency injection for clean, testable code.</p>
@@ -163,7 +219,7 @@
 
                     <!-- Project 2: Data & Compliance (Compliance Reporting) -->
                     <a href="https://github.com/ashmythomas141/compliance-reporting" target="_blank" class="project-card block">
-                        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between">
+                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3">Automated Compliance Reporting System</h3>
                                 <p class="text-gray-600 mb-4 text-sm">Developed a script using **Python (Pandas)** to extract and transform raw transactional data from various sources (simulating ETL). Validated data integrity against predefined compliance rules and loaded the cleaned data into a normalized **SQL database** for generating daily and weekly reports, significantly improving data accuracy and audit readiness.</p>
@@ -183,7 +239,7 @@
 
                     <!-- Project 3: Cloud Deployment (QA Automation Pipeline) -->
                     <a href="https://github.com/ashmythomas141/qa-pipeline" target="_blank" class="project-card block">
-                        <div class="bg-white p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between">
+                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 h-full flex flex-col justify-between">
                             <div>
                                 <h3 class="text-xl font-bold text-gray-900 mb-3">Azure-Hosted QA Automation Pipeline</h3>
                                 <p class="text-gray-600 mb-4 text-sm">Designed and deployed a basic **CI/CD pipeline** on **Azure (or AWS)** to host automated QA tests. Utilized **Selenium** with C# to execute regression test suites against web application endpoints. This project demonstrates skills in cloud resource provisioning, system administration, and maintaining code quality through automated checks.</p>
@@ -203,6 +259,28 @@
                 </div>
             </div>
         </section>
+
+        <!-- Technical Skills Tag Cloud Section -->
+        <section class="py-16 sm:py-24 bg-blue-50" id="tech-stack">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Reusing the tag cloud here -->
+                <div class="p-8 bg-white rounded-2xl shadow-xl border-t-4 border-gray-200">
+                    <h3 class="text-xl font-bold text-gray-900 mb-6 text-center">Core Technical Stack</h3>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <span class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-full shadow-md">C# / .NET Core</span>
+                        <span class="px-4 py-2 bg-gray-700 text-white text-sm font-medium rounded-full shadow-md">SQL Server</span>
+                        <span class="px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-full shadow-md">Azure Cloud (PaaS)</span>
+                        <span class="px-4 py-2 bg-yellow-600 text-white text-sm font-medium rounded-full shadow-md">AWS Foundations</span>
+                        <span class="px-4 py-2 bg-red-600 text-white text-sm font-medium rounded-full shadow-md">Selenium Testing</span>
+                        <span class="px-4 py-2 bg-purple-600 text-white text-sm font-medium rounded-full shadow-md">Python</span>
+                        <span class="px-4 py-2 bg-gray-400 text-gray-900 text-sm font-medium rounded-full shadow-md">Agile / Scrum</span>
+                        <span class="px-4 py-2 bg-blue-400 text-white text-sm font-medium rounded-full shadow-md">Microservices</span>
+                        <span class="px-4 py-2 bg-indigo-600 text-white text-sm font-medium rounded-full shadow-md">Unit Testing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!-- Contact Section -->
         <section id="contact" class="py-16 sm:py-24 bg-white">
